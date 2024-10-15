@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>个人名片</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/reset.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+
+<body>
+    <audio src="{{ url_for('static', filename='audio/background-music.mp3') }}" autoplay loop
+        style="display:none;"></audio>
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li data-target="#home">首页</li>
+                    <li data-target="#about">关于我</li>
+                    <li data-target="#work">工作经历</li>
+                    <li data-target="#profile">作品集</li>
+                    <li data-target="#contact">联系我</li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="home" class="content-section active">
+                <h2>欢迎来到我的主页</h2>
+                <p>您好！我叫刘宇豪，一名全栈开发工程师。</p>
+                <p>在这里，您将能够了解到我的专业技能、工作经历以及我所完成的一些项目。</p>
+                <p>您可以通过导航菜单了解更多关于我的信息，查看我的作品集，或者通过联系方式与我取得联系。</p>
+                <p>如果您对我感兴趣，欢迎随时联系我。</p>
+                <a href="#about" class="btn" id="learnMoreBtn">了解更多</a>
+            </section>
+            <section id="about" class="content-section">
+                <h2>关于我</h2>
+                <p>
+                    <strong>姓名：</strong>
+                    刘宇豪
+                </p>
+                <p>
+                    <strong>职位：</strong>
+                    全栈开发工程师
+                </p>
+                <p>
+                    <strong>专业技能：</strong>
+                <ul>
+                    <li>
+                        <strong>编程经验：</strong>
+                        熟悉多种编程语言（如Python、JavaScript），能够处理复杂的编程任务和技术挑战,曾参与多个项目的开发和维护。
+                    </li>
+                    <li>
+                        <strong>前端技术：</strong>
+                        熟悉 Vue 前端框架，能够创建响应式和用户友好的界面。具备 HTML5、CSS3 和 JavaScript 编程能力。
+                    </li>
+                    <li>
+                        <strong>后端开发：</strong>
+                        擅长使用 Flask 和 Django 开发高效、可扩展的后端服务。
+                    </li>
+                    <li>
+                        <strong>数据库设计：</strong>
+                        具备扎实的数据库设计能力，能够使用 ORM 工具（如 SQLAlchemy）进行数据操作。
+                    </li>
+                    <li>
+                        <strong>Web 应用开发：</strong>
+                        能够设计和实现高效的 Web 应用程序，熟悉常用的前后端技术和工具，具备处理复杂业务逻辑和用户交互的能力。
+                    </li>
+                </ul>
+
+                </p>
+
+                <p>
+                    <strong>教育背景：</strong>
+                <ul>
+                    <li>
+                        <strong>学历：</strong>
+                        <span>北华航天工业学院</span>
+                        <span>本科</span>
+                        <span>计算机科学与技术(国家特色专业)</span>
+                        <span>2020年9月 - 2024年6月</span>
+                    </li>
+                    <li>
+                        <strong>GPA：</strong>
+                        3.36 / 4.0 (排名前 10%)
+                    </li>
+                    <li>
+                        <strong>主修课程：</strong>
+                        Python 高级开发 、数据结构、数据库、Flask、机器学习、深度学习等。
+                    </li>
+                </ul>
+                </p>
+                <p>
+                    <strong>个人兴趣：</strong>
+                    热衷于学习新的编程语言和技术，在Github和CSDN上积极参与，喜欢分享技术经验，致力于不断提升自己的技能。
+                </p>
+                <p>
+                    <strong>职业目标：</strong>
+                    希望利用我在前端开发和后端开发方面的专业技能，致力于解决复杂问题，提升用户体验，并不断学习和成长，以在技术领域取得显著成就。
+                </p>
+            </section>
+            <section id="work" class="content-section">
+                <h2>工作经历</h2>
+                <div class="work-item">
+                    <h3 class="work-title">数据科学工程师（实习生） - 汇天科技有限公司</h3>
+                    <p class="work-time">工作时间：2023年11月 - 2024年4月</p>
+                    <p class="work-task">
+                        负责的主要工作包括：
+                    <ul>
+                        <li>负责ChatGLM3-6B及Langchain-Chatcaht等大型语言模型的部署与测试流程，确保系统稳定运行。</li>
+                        <li>参与过文生图,图生图的stable diffusion整合包在服务器上的部署和测试工作。</li>
+                        <li>参与过isacc机器人的算法开发。</li>
+                        <li>对一些人工智能的消息进行实时关注</li>
+                    </ul>
+                    </p>
+                    <p class="work-learn">通过实习，我深入了解了大型语言模型的应用，并掌握了模型部署和测试的流程。同时，我也对人工智能领域的新技术保持关注，不断丰富自己的知识体系。</p>
+                </div>
+                <div class="work-item">
+                    <h3 class="work-title">AI产品工程师 - 北京桃花仙教育科技有限公司</h3>
+                    <p class="work-time">工作时间：2024年7月 - 至今</p>
+                    <p class="work-task">
+                        负责的主要工作包括：
+                    <ul>
+                        <li>负责企业微信侧边栏的AI客服提示应用的开发，部署和测试相关工作</li>
+                    </ul>
+                    </p>
+
+                </div>
+            </section>
+
+
+            <section id="profile" class="content-section">
+                <h2>作品集</h2>
+                <div class="project-item">
+                    <h3 class="project-title">Web客户端人脸登录</h3>
+                    <p class="project-time">项目时间：2023年8月 - 2023年9月</p>
+                    <p class="project-description">
+                        该系统实现了基于人脸识别的登录功能。后端使用 <strong>Flask</strong> 框架建立了数据库和 API 接口，前端采用
+                        <strong>HTML5</strong>、<strong>CSS</strong> 和 <strong>JavaScript</strong>
+                        进行页面布局。系统利用人脸识别算法进行用户登录验证。
+                    </p>
+                    <p class="profile-function">主要包括：
+                    <ul>
+                        <li>前端设计了登录页面，使用浏览器自带的摄像头接口来捕获用户的实时视频。</li>
+                        <li>通过 <strong>Canvas</strong> 对视频帧进行处理，捕获人脸图像，并将其转换为 <strong>base64</strong> 数据格式传输到后端。</li>
+                        <li>后端建立了数据库和 API 接口，并实现了人脸识别算法用于用户登录验证。</li>
+                    </ul>
+                    </p>
+                    <p class="project-learn">通过该项目，我掌握了前后端人脸识别技术的实现，并提高了对 Flask 框架的使用和 Web 开发技能的理解。</p>
+                    <a href="https://github.com/liuyuhao412/webFaceLogin" target="_blank">查看项目</a>
+                </div>
+
+                <div class="project-item">
+                    <h3 class="project-title">基于大模型的知识问答系统</h3>
+                    <p class="project-time">项目时间：2024年1月 - 2024年3月</p>
+                    <p class="project-description">
+                        该系统为毕业设计项目，基于前后端分离架构开发，旨在实现基于大模型的知识问答功能。前端使用了
+                        <strong>Vue 3</strong> 和 <strong>TypeScript</strong> 技术栈，后端采用 <strong>Flask</strong> 框架，数据存储使用
+                        <strong>MySQL</strong> 数据库。在 GPU 服务器上部署了 <strong>LangChain-ChatChat</strong> 模型，通过 API
+                        调用完成问答系统的文件上传及问答功能。
+                    </p>
+                    <p class="profile-function">主要包括：
+                    <ul>
+                        <li>实现了用户管理等功能</li>
+                        <li>管理员可以上传文件，来管理知识问答库和问答参数的设置</li>
+                        <li>用户可以对基于问答库的问答</li>
+                    </ul>
+                    </p>
+                    <p class="project-learn">通过该项目，我提升了对前后端分离开发的理解，解决了实际开发中的跨域问题，并掌握了部署大模型及其 API 调用的实际技能。</p>
+                    <a href="https://github.com/liuyuhao412/qaSystem_client" target="_blank">查看项目前端</a>
+                    <a href="https://github.com/liuyuhao412/qaSystem_server" target="_blank">查看项目后端</a>
+                </div>
+
+            </section>
+            <section id="contact" class="content-section">
+                <h2>联系我</h2>
+                <p>如果你对我感兴趣或有任何问题，可以通过以下方式联系我：</p>
+                <ul>
+                    <li>liuyuhaoweb@163.com</li>
+                    <li>151-2823-6205</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 刘宇豪.保留所有权利。</p>
+            <ul>
+                <li><a href="https://github.com/liuyuhao412" target="_blank">GitHub</a></li>
+                <li><a href="https://blog.csdn.net/qq_52429717?spm=1000.2115.3001.5343" target="_blank">CSDN</a></li>
+            </ul>
+        </footer>
+    </div>
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+</body>
+
+</html>
